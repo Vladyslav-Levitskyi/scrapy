@@ -6,9 +6,6 @@ class UakinoSpider(Spider):
     allowed_domains = ['uakino.me']
     start_urls = ['https://uakino.me/filmy/documentaries/']
     custom_settings = {
-        'ROBOTSTXT_OBEY': False,
-        'DOWNLOAD_DELAY': 2,
-        'CONCURRENT_REQUESTS': 1,
         'DUPEFILTER_CLASS': 'scrapy.dupefilters.RFPDupeFilter',
         'FEEDS': {
             'movie_links.json': {

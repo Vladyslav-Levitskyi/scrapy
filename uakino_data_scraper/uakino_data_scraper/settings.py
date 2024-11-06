@@ -17,8 +17,13 @@ NEWSPIDER_MODULE = "uakino_data_scraper.spiders"
 #USER_AGENT = "uakino_data_scraper (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
+# Налаштування затримки
+DOWNLOAD_DELAY = 1.5
+CONCURRENT_REQUESTS = 1
 
+# Налаштування User-Agent
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
 
 # три стрічки нижче допоможуть уникнути блокування зі сторони сайту (якщо потрібно)
 # ROBOTSTXT_OBEY = False  
